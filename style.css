@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #22438c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.star {
+  margin: 20px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-right: 45px solid transparent;
+  border-bottom: 40px solid gold;
+  border-left: 45px solid transparent;
+  transform: rotate(35deg);
+  cursor: pointer;
+}
+.star:before {
+  position: absolute;
+  display: inline-block;
+  left: -32px;
+  top: -20px;
+  width: 0;
+  height: 0;
+  border-right: 16px solid transparent;
+  border-bottom: 35px solid gold;
+  border-left: 16px solid transparent;
+  content: "";
+  transform: rotate(-34deg);
+  cursor: pointer;
+}
+.star:after {
+  position: absolute;
+  display: inline-block;
+  left: -45px;
+  top: 0px;
+  width: 0;
+  height: 0;
+  border-right: 45px solid transparent;
+  border-bottom: 40px solid gold;
+  border-left: 45px solid transparent;
+  content: "";
+  transform: rotate(-70deg);
+  cursor: pointer;
+}
+
