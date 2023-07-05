@@ -44,3 +44,23 @@ function toggleVisibility() {
   // Attach the click event listener to the element
   var  HideStar = document.getElementById("star_1");
   HideStar.addEventListener("click", toggleVisibility);
+
+
+
+
+  function handleHover() {
+    var element = document.getElementById("star_1");
+    // Add your hover behavior here
+    element.style.borderBottomColor='purple';
+  }
+
+  function handleMouseOut() {
+    var element = document.getElementById("star_1");
+    // Add your hover off behavior here
+    element.style.borderBottomColor="";
+  }
+
+  // Attach the mouseover and mouseout event listeners to the element
+  var element = document.getElementById("star_1");
+  element.addEventListener("mouseover", handleHover);
+  element.addEventListener("mouseout", handleMouseOut);
